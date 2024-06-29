@@ -1,0 +1,70 @@
+/* .qr-reader {
+    width: 430px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .qr-reader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .qr-reader .qr-box {
+    width: 100% !important;
+    left: 0 !important;
+  }
+  
+  .qr-reader .qr-frame {
+    position: absolute;
+    fill: none;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  /* Media Queries for mobile screens */
+  /* @media (max-width: 426px) {
+    .qr-reader {
+      width: 100%;
+    }
+  } */ */
+
+  .qr-reader {
+    width: 320px; /* Set the initial width */
+    height: 100vh; /* Full viewport height */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* Positioning context for absolute children */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .qr-reader video {
+    width: 100%; /* Ensure video fills its container */
+    height: 100%; /* Ensure video fills its container */
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+  
+  .qr-reader .qr-box {
+    width: 100% !important; /* Ensure QR box spans full width */
+    left: 0 !important; /* Position QR box to the left */
+  }
+  
+  .qr-reader .qr-frame {
+    position: absolute; /* Absolute position for frame */
+    fill: none; /* No fill for frame */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Translate to center */
+  }
+  
+  /* Media Queries for responsive adjustments */
+  @media (max-width: 426px) {
+    .qr-reader {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  
